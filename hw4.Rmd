@@ -1,0 +1,24 @@
+Homework 4 - [Your team name here]
+========================================================
+
+
+### Task 1 - Scraping LQ
+
+<!-- Detail your approach for scraping hotel data from LQ's website -->
+
+
+<br/>
+
+## Task 2 - Scraping Denny's
+
+<!-- Detail your approach for scraping restaurant data from where2getit -->
+
+
+<br/>
+
+## Task 3 -  Distance Analysis
+
+<!-- Detail your statistical analysis of the pairwise distance between Denny's and LQ's-->
+
+```{r}
+```

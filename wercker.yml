@@ -1,0 +1,23 @@
+box: rocker/hadleyverse
+
+build:
+  steps:
+    - script:
+        name: Update Packages
+        code: |
+          Rscript -e "update.packages(ask = FALSE)"
+    - script:
+        name: Check for allowed files
+        code: |
+          Rscript -e "source('http://www2.stat.duke.edu/~cr173/Sta323_Sp17/hw/hw4_whitelist.R')"
+    - script:
+        name: Check make runs
+        code: |
+          make
+          Rscript -e "stopifnot(file.exists('hw4.html'))"
+    - script:
+        name: Check make clean runs
+        code: |
+          make clean
+          Rscript -e "source('http://www2.stat.duke.edu/~cr173/Sta323_Sp17/hw/hw4_whitelist.R')"
+          
