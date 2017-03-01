@@ -45,7 +45,7 @@ zips = c(27705, 90210)
 
 for(zip in zips)
 {
-  download.file(get_dennys_xml(limit=1000, radius=1000, address=zip), 
+  download.file(get_dennys_xml_url(limit=1000, radius=1000, address=zip), 
                 destfile = paste0("data/dennys/",zip,".xml"),
                 quiet = TRUE)
 }

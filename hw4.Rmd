@@ -6,6 +6,10 @@ Homework 4 - [Your team name here]
 
 <!-- Detail your approach for scraping hotel data from LQ's website -->
 
+```{r}
+load("data/lq.Rdata")
+d
+```
 
 <br/>
 
@@ -13,7 +17,11 @@ Homework 4 - [Your team name here]
 
 <!-- Detail your approach for scraping restaurant data from where2getit -->
 
-
+```{r}
+load("data/dennys.Rdata")
+d
+```
+  
 <br/>
 
 ## Task 3 -  Distance Analysis
